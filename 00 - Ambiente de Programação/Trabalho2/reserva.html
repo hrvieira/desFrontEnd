@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reserva de Viagem</title>
+</head>
+
+<body>
+  <h2>Formulário para Reserva de Viagem</h2>
+  <form action="#" method="POST">
+    <fieldset>
+      <legend>Dados da Reserva</legend>
+      <label for="nome">Nome:</label><br>
+      <input type="text" id="nome" name="nome" required><br><br>
+
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="dataIda">Data de ida</label><br>
+      <input type="data" id="dataIda" name="dataIda"><br><br>
+
+      <label for="dataVolta">Data de volta</label><br>
+      <input type="data" id="dataVolta" name="dataVolta"><br><br>
+
+      <label for="qtdPessoas">Quantidade de pessoas</label><br>
+      <input type="number" id="qtdPessoas" name="qtdPessoas"><br>
+    </fieldset>
+    <br>
+    <fieldset>
+      <legend>Serviços Desejados:</legend>
+      <input type="checkbox" id="passagens" name="servicos" value="passagens">
+      <label for="passagens">Compra de Passagens</label><br>
+      <input type="checkbox" id="veiculos" name="servicos" value="veiculos">
+      <label for="veiculos">Aluguel de Veículos</label><br>
+      <input type="checkbox" id="hospedagem" name="servicos" value="hospedagem">
+      <label for="hospedagem">Reserva de Hospedagem</label><br>
+      <label for="quartos">Número de Quartos (máximo 3):</label><br>
+      <select id="quartos" name="quartos">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+      </select><br>
+    </fieldset>
+    <br>
+    <fieldset>
+      <legend>Forma de Pagamento:</legend>
+      <input type="radio" id="cartao" name="pagamento" value="cartao">
+      <label for="cartao">Cartão de Crédito</label><br>
+      <input type="radio" id="boleto" name="pagamento" value="boleto">
+      <label for="boleto">Boleto</label><br>
+      <input type="radio" id="pix" name="pagamento" value="pix">
+      <label for="pix">PIX</label><br>
+      <br>
+      <label for="prazo">Prazo de Pagamento:</label><br>
+      <select id="prazo" name="prazo">
+        <option value="avista">À Vista</option>
+        <option value="2">2x Sem Juros</option>
+        <option value="3">3x Sem Juros</option>
+        <option value="4">4x Sem Juros</option>
+        <option value="5">5x Sem Juros</option>
+        <option value="6">6x Com Juros</option>
+        <option value="7">7x Com Juros</option>
+        <option value="8">8x Com Juros</option>
+        <option value="9">9x Com Juros</option>
+        <option value="10">10x Com Juros</option>
+        <option value="11">11x Com Juros</option>
+        <option value="12">12x Com Juros</option>
+      </select><br>
+    </fieldset>
+    <br>
+    <fieldset>
+      <label for="informacoes">Informações adicionais</label><br>
+      <textarea name="informacoes" id="informacoes" rows="5"></textarea><br>
+    </fieldset>
+    <br>
+    <input type="submit" value="Enviar Reserva">
+  </form>
+</body>
+
+</html>
